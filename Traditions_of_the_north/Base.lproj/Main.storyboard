@@ -8,55 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Календарь-->
-        <scene sceneID="IGP-ec-ZZ5">
-            <objects>
-                <viewController id="J9Z-oq-2CO" customClass="CalendarTableViewController" customModule="Traditions_of_the_north" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="l2A-2B-JTo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фон" translatesAutoresizingMaskIntoConstraints="NO" id="Huv-mG-d9Y">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" id="rlG-rp-I26">
-                                <rect key="frame" x="20" y="48" width="374" height="53"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <connections>
-                                    <action selector="datePickerValueChanged:" destination="J9Z-oq-2CO" eventType="valueChanged" id="zy3-pS-bcs"/>
-                                </connections>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст о событии" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TE-3w-z6c">
-                                <rect key="frame" x="26" y="107" width="368" height="755"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="zom-xn-MVe"/>
-                        <color key="backgroundColor" systemColor="separatorColor"/>
-                        <constraints>
-                            <constraint firstItem="Huv-mG-d9Y" firstAttribute="trailing" secondItem="zom-xn-MVe" secondAttribute="trailing" id="3oT-aY-BAO"/>
-                            <constraint firstItem="Huv-mG-d9Y" firstAttribute="leading" secondItem="zom-xn-MVe" secondAttribute="leading" id="Iqf-hc-zyC"/>
-                            <constraint firstItem="6TE-3w-z6c" firstAttribute="bottom" secondItem="zom-xn-MVe" secondAttribute="bottom" id="Ko4-H8-hTb"/>
-                            <constraint firstItem="6TE-3w-z6c" firstAttribute="top" secondItem="rlG-rp-I26" secondAttribute="bottom" constant="6" id="SxJ-zC-Xzt"/>
-                            <constraint firstItem="Huv-mG-d9Y" firstAttribute="top" secondItem="l2A-2B-JTo" secondAttribute="top" id="b7y-Mt-z1T"/>
-                            <constraint firstItem="6TE-3w-z6c" firstAttribute="trailing" secondItem="l2A-2B-JTo" secondAttribute="trailingMargin" id="eSq-iW-Ucv"/>
-                            <constraint firstAttribute="bottom" secondItem="Huv-mG-d9Y" secondAttribute="bottom" id="my6-F8-zvG"/>
-                            <constraint firstItem="6TE-3w-z6c" firstAttribute="leading" secondItem="zom-xn-MVe" secondAttribute="leading" constant="26" id="pbU-uf-aAf"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Календарь" image="calendar.circle" catalog="system" selectedImage="calendar.circle" id="ZjZ-OA-AJI">
-                        <color key="badgeColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
-                    <connections>
-                        <outlet property="greetingLabel" destination="6TE-3w-z6c" id="hkr-pk-7vD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2yP-tY-omi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2828.985507246377" y="-645.53571428571422"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="OOF-Re-dll">
             <objects>
@@ -65,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фон" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-q1-jxZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="8cz-qi-g59"/>
+                                    <constraint firstAttribute="width" constant="414" id="iTA-CT-RZ9"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каждый день в России страдание!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-tb-PN0">
                                 <rect key="frame" x="20" y="117" width="374" height="52"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,7 +36,7 @@
                                 <rect key="frame" x="20" y="177" width="374" height="685"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f92-aZ-Oag">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="114"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="181"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="181" id="5FR-i7-4U1"/>
                                         </constraints>
@@ -127,12 +85,16 @@
                             <constraint firstItem="UjG-KQ-33B" firstAttribute="trailing" secondItem="yxY-fq-FiG" secondAttribute="trailing" constant="115" id="3uq-LZ-v9m"/>
                             <constraint firstItem="UjG-KQ-33B" firstAttribute="bottom" secondItem="wD2-kl-MP7" secondAttribute="bottom" id="6rx-Mf-KCD"/>
                             <constraint firstItem="UjG-KQ-33B" firstAttribute="trailing" secondItem="VpN-ZH-GDC" secondAttribute="trailingMargin" id="9gS-Px-RuP"/>
+                            <constraint firstItem="eAh-q1-jxZ" firstAttribute="top" secondItem="VpN-ZH-GDC" secondAttribute="top" id="Ejs-5H-tmH"/>
+                            <constraint firstItem="eAh-q1-jxZ" firstAttribute="leading" secondItem="wD2-kl-MP7" secondAttribute="leading" id="RkL-rJ-hYp"/>
                             <constraint firstItem="UvU-tb-PN0" firstAttribute="top" secondItem="yxY-fq-FiG" secondAttribute="bottom" constant="8" id="TLa-hh-boP"/>
                             <constraint firstItem="UjG-KQ-33B" firstAttribute="trailing" secondItem="UvU-tb-PN0" secondAttribute="trailing" id="Tp0-Z0-WWs"/>
                             <constraint firstItem="UjG-KQ-33B" firstAttribute="leading" secondItem="VpN-ZH-GDC" secondAttribute="leadingMargin" id="WQe-Bx-FR1"/>
                             <constraint firstItem="UjG-KQ-33B" firstAttribute="leading" secondItem="UvU-tb-PN0" secondAttribute="leading" id="Z0Y-dJ-YQ3"/>
                             <constraint firstItem="yxY-fq-FiG" firstAttribute="top" secondItem="wD2-kl-MP7" secondAttribute="top" id="dFy-3c-OB9"/>
                             <constraint firstItem="UjG-KQ-33B" firstAttribute="top" secondItem="VpN-ZH-GDC" secondAttribute="top" constant="177" id="f3n-Uh-yGQ"/>
+                            <constraint firstItem="eAh-q1-jxZ" firstAttribute="trailing" secondItem="wD2-kl-MP7" secondAttribute="trailing" id="lxO-Gz-PLl"/>
+                            <constraint firstAttribute="bottom" secondItem="eAh-q1-jxZ" secondAttribute="bottom" id="mnr-KI-gGR"/>
                             <constraint firstItem="UjG-KQ-33B" firstAttribute="leading" secondItem="yxY-fq-FiG" secondAttribute="leading" constant="-116" id="n4R-Ne-DCC"/>
                             <constraint firstItem="UjG-KQ-33B" firstAttribute="top" secondItem="UvU-tb-PN0" secondAttribute="bottom" constant="8" id="qYU-J3-Oa7"/>
                         </constraints>
@@ -150,11 +112,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar.circle" catalog="system" width="128" height="123"/>
         <image name="фон" width="256" height="256"/>
-        <systemColor name="separatorColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
