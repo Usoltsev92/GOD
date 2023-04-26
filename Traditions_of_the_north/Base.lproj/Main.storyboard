@@ -1,24 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c48-3f-tYY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Календарь-->
+        <scene sceneID="IGP-ec-ZZ5">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="J9Z-oq-2CO" customClass="CalendarTableViewController" customModule="Traditions_of_the_north" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l2A-2B-JTo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фон" translatesAutoresizingMaskIntoConstraints="NO" id="Huv-mG-d9Y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" id="rlG-rp-I26">
+                                <rect key="frame" x="20" y="48" width="374" height="53"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <action selector="datePickerValueChanged:" destination="J9Z-oq-2CO" eventType="valueChanged" id="zy3-pS-bcs"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текст о событии" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TE-3w-z6c">
+                                <rect key="frame" x="26" y="107" width="368" height="755"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zom-xn-MVe"/>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
+                        <constraints>
+                            <constraint firstItem="Huv-mG-d9Y" firstAttribute="trailing" secondItem="zom-xn-MVe" secondAttribute="trailing" id="3oT-aY-BAO"/>
+                            <constraint firstItem="Huv-mG-d9Y" firstAttribute="leading" secondItem="zom-xn-MVe" secondAttribute="leading" id="Iqf-hc-zyC"/>
+                            <constraint firstItem="6TE-3w-z6c" firstAttribute="bottom" secondItem="zom-xn-MVe" secondAttribute="bottom" id="Ko4-H8-hTb"/>
+                            <constraint firstItem="6TE-3w-z6c" firstAttribute="top" secondItem="rlG-rp-I26" secondAttribute="bottom" constant="6" id="SxJ-zC-Xzt"/>
+                            <constraint firstItem="Huv-mG-d9Y" firstAttribute="top" secondItem="l2A-2B-JTo" secondAttribute="top" id="b7y-Mt-z1T"/>
+                            <constraint firstItem="6TE-3w-z6c" firstAttribute="trailing" secondItem="l2A-2B-JTo" secondAttribute="trailingMargin" id="eSq-iW-Ucv"/>
+                            <constraint firstAttribute="bottom" secondItem="Huv-mG-d9Y" secondAttribute="bottom" id="my6-F8-zvG"/>
+                            <constraint firstItem="6TE-3w-z6c" firstAttribute="leading" secondItem="zom-xn-MVe" secondAttribute="leading" constant="26" id="pbU-uf-aAf"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Календарь" image="calendar.circle" catalog="system" selectedImage="calendar.circle" id="ZjZ-OA-AJI">
+                        <color key="badgeColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="greetingLabel" destination="6TE-3w-z6c" id="hkr-pk-7vD"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yP-tY-omi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2828.985507246377" y="-645.53571428571422"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OOF-Re-dll">
+            <objects>
+                <viewController id="c48-3f-tYY" customClass="ViewController" customModule="Traditions_of_the_north" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VpN-ZH-GDC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каждый день в России страдание!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-tb-PN0">
+                                <rect key="frame" x="20" y="117" width="374" height="52"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.66678816919999995" green="0.81033162700000005" blue="0.93848573410000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjG-KQ-33B">
+                                <rect key="frame" x="20" y="177" width="374" height="685"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f92-aZ-Oag">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="114"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="181" id="5FR-i7-4U1"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание праздника" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-5e-CbR">
+                                        <rect key="frame" x="8" y="189" width="358" height="496"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="496" id="l9g-TL-ryS"/>
+                                            <constraint firstAttribute="width" constant="358" id="vBb-0W-tzu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Jda-5e-CbR" firstAttribute="bottom" secondItem="XSu-O7-iRk" secondAttribute="bottom" id="Awi-2h-LpT"/>
+                                    <constraint firstItem="f92-aZ-Oag" firstAttribute="top" secondItem="XSu-O7-iRk" secondAttribute="top" id="Gzm-q7-d2F"/>
+                                    <constraint firstItem="Jda-5e-CbR" firstAttribute="top" secondItem="f92-aZ-Oag" secondAttribute="bottom" constant="8" symbolic="YES" id="TUw-iW-0Cd"/>
+                                    <constraint firstItem="f92-aZ-Oag" firstAttribute="centerX" secondItem="Jda-5e-CbR" secondAttribute="centerX" id="UUx-P4-HGJ"/>
+                                    <constraint firstItem="f92-aZ-Oag" firstAttribute="centerX" secondItem="XSu-O7-iRk" secondAttribute="centerX" id="VKF-W9-LCv"/>
+                                    <constraint firstAttribute="bottom" secondItem="f92-aZ-Oag" secondAttribute="bottom" constant="504" id="YH7-iz-qey"/>
+                                    <constraint firstItem="Jda-5e-CbR" firstAttribute="top" secondItem="f92-aZ-Oag" secondAttribute="bottom" constant="8" id="pDl-qx-suE"/>
+                                    <constraint firstItem="f92-aZ-Oag" firstAttribute="leading" secondItem="XSu-O7-iRk" secondAttribute="leading" id="x9N-Rc-Y09"/>
+                                    <constraint firstAttribute="trailing" secondItem="f92-aZ-Oag" secondAttribute="trailing" id="y6s-ok-M8T"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="224-xc-ejY"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="XSu-O7-iRk"/>
+                            </scrollView>
+                            <datePicker clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="spatial" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="yxY-fq-FiG">
+                                <rect key="frame" x="136" y="48" width="143" height="61"/>
+                                <color key="tintColor" systemColor="tertiaryLabelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="rtI-7r-p8x"/>
+                                </constraints>
+                                <locale key="locale" localeIdentifier="ru"/>
+                                <connections>
+                                    <action selector="datePickerChanged:" destination="c48-3f-tYY" eventType="valueChanged" id="XXz-Qe-0bH"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wD2-kl-MP7"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UjG-KQ-33B" firstAttribute="trailing" secondItem="yxY-fq-FiG" secondAttribute="trailing" constant="115" id="3uq-LZ-v9m"/>
+                            <constraint firstItem="UjG-KQ-33B" firstAttribute="bottom" secondItem="wD2-kl-MP7" secondAttribute="bottom" id="6rx-Mf-KCD"/>
+                            <constraint firstItem="UjG-KQ-33B" firstAttribute="trailing" secondItem="VpN-ZH-GDC" secondAttribute="trailingMargin" id="9gS-Px-RuP"/>
+                            <constraint firstItem="UvU-tb-PN0" firstAttribute="top" secondItem="yxY-fq-FiG" secondAttribute="bottom" constant="8" id="TLa-hh-boP"/>
+                            <constraint firstItem="UjG-KQ-33B" firstAttribute="trailing" secondItem="UvU-tb-PN0" secondAttribute="trailing" id="Tp0-Z0-WWs"/>
+                            <constraint firstItem="UjG-KQ-33B" firstAttribute="leading" secondItem="VpN-ZH-GDC" secondAttribute="leadingMargin" id="WQe-Bx-FR1"/>
+                            <constraint firstItem="UjG-KQ-33B" firstAttribute="leading" secondItem="UvU-tb-PN0" secondAttribute="leading" id="Z0Y-dJ-YQ3"/>
+                            <constraint firstItem="yxY-fq-FiG" firstAttribute="top" secondItem="wD2-kl-MP7" secondAttribute="top" id="dFy-3c-OB9"/>
+                            <constraint firstItem="UjG-KQ-33B" firstAttribute="top" secondItem="VpN-ZH-GDC" secondAttribute="top" constant="177" id="f3n-Uh-yGQ"/>
+                            <constraint firstItem="UjG-KQ-33B" firstAttribute="leading" secondItem="yxY-fq-FiG" secondAttribute="leading" constant="-116" id="n4R-Ne-DCC"/>
+                            <constraint firstItem="UjG-KQ-33B" firstAttribute="top" secondItem="UvU-tb-PN0" secondAttribute="bottom" constant="8" id="qYU-J3-Oa7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabelOutlet" destination="UvU-tb-PN0" id="d2Z-xs-Vjg"/>
+                        <outlet property="holidayDatePickerOutlet" destination="yxY-fq-FiG" id="mgs-kd-a2l"/>
+                        <outlet property="holidayImageViewOutlet" destination="f92-aZ-Oag" id="X6G-um-1Z9"/>
+                        <outlet property="holidayNameLabelOutlet" destination="Jda-5e-CbR" id="o0Y-rT-i6o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoI-a3-ck5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2828.985507246377" y="14.732142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar.circle" catalog="system" width="128" height="123"/>
+        <image name="фон" width="256" height="256"/>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
