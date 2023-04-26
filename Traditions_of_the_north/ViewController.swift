@@ -48,8 +48,8 @@ class ViewController: UIViewController {
                components.year = year
                if let date = calendar.date(from: components), isSameDate(date, selectedDate) {
                    DispatchQueue.main.async {
-                       self.greetingLabelOutlet.text = holiday.greetingText
-                       self.holidayNameLabelOutlet.text = holiday.name
+                       self.greetingLabelOutlet.text = holiday.name
+                       self.holidayNameLabelOutlet.text = holiday.greetingText
                            
                        if let imageName = holiday.image {
                            self.holidayImageViewOutlet.image = UIImage(named: imageName)
@@ -61,11 +61,4 @@ class ViewController: UIViewController {
                }
            }
        }
-       
-//       @IBAction func datePickerChanged(_ sender: UIDatePicker) {
-//           let calendar = Calendar.current
-//           let year = calendar.component(.year, from: sender.date)
-//           setupHolidayGreeting(year: year)
-//       }
-       
    }
