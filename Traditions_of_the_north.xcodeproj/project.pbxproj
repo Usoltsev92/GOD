@@ -13,7 +13,6 @@
 		1498A76529F3FA2900F50C8C /* Traditions_of_the_north.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1498A76329F3FA2900F50C8C /* Traditions_of_the_north.xcdatamodeld */; };
 		1498A76729F3FA2A00F50C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1498A76629F3FA2A00F50C8C /* Assets.xcassets */; };
 		1498A76A29F3FA2A00F50C8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1498A76829F3FA2A00F50C8C /* LaunchScreen.storyboard */; };
-		1498A77429F6DFF500F50C8C /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498A77329F6DFF500F50C8C /* CalendarViewController.swift */; };
 		1498A77629F7F49600F50C8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498A77529F7F49600F50C8C /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		1498A76629F3FA2A00F50C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1498A76929F3FA2A00F50C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1498A76B29F3FA2A00F50C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1498A77329F6DFF500F50C8C /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		1498A77529F7F49600F50C8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +60,6 @@
 			children = (
 				1498A75A29F3FA2900F50C8C /* AppDelegate.swift */,
 				1498A75C29F3FA2900F50C8C /* SceneDelegate.swift */,
-				1498A77329F6DFF500F50C8C /* CalendarViewController.swift */,
 				1498A76029F3FA2900F50C8C /* Main.storyboard */,
 				1498A77529F7F49600F50C8C /* ViewController.swift */,
 				1498A76629F3FA2A00F50C8C /* Assets.xcassets */,
@@ -148,7 +145,6 @@
 				1498A75B29F3FA2900F50C8C /* AppDelegate.swift in Sources */,
 				1498A75D29F3FA2900F50C8C /* SceneDelegate.swift in Sources */,
 				1498A76529F3FA2900F50C8C /* Traditions_of_the_north.xcdatamodeld in Sources */,
-				1498A77429F6DFF500F50C8C /* CalendarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
