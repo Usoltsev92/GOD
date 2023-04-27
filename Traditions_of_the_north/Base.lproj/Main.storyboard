@@ -17,19 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фон" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-q1-jxZ">
-                                <rect key="frame" x="0.0" y="0.0" width="412.5" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фон" translatesAutoresizingMaskIntoConstraints="NO" id="f92-aZ-Oag">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="y8" translatesAutoresizingMaskIntoConstraints="NO" id="f92-aZ-Oag">
                                 <rect key="frame" x="8" y="178" width="396.5" height="152"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="152" id="37W-j8-6JJ"/>
-                                    <constraint firstAttribute="width" constant="395" id="O9t-Tl-gV0"/>
+                                    <constraint firstAttribute="width" constant="396.5" id="O9t-Tl-gV0"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каждый день в России страдание!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-tb-PN0">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сегодня просто пытались выжить." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-tb-PN0">
                                 <rect key="frame" x="8" y="117" width="396.5" height="53"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,7 +55,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="f6t-av-g5z">
                                 <rect key="frame" x="0.0" y="347" width="412.5" height="515"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание праздника" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-5e-CbR">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жили не тужили. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-5e-CbR">
                                         <rect key="frame" x="8" y="8" width="397" height="500"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="397" id="DUg-Ye-tU5"/>
@@ -81,7 +80,6 @@
                         <viewLayoutGuide key="safeArea" id="wD2-kl-MP7"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="f92-aZ-Oag" firstAttribute="width" secondItem="UvU-tb-PN0" secondAttribute="width" id="4ng-TF-fAn"/>
                             <constraint firstItem="UvU-tb-PN0" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="f92-aZ-Oag" secondAttribute="trailing" id="7eO-qx-3Qa"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="bottom" secondItem="wD2-kl-MP7" secondAttribute="bottom" id="7nV-b1-uvr"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="bottom" secondItem="wD2-kl-MP7" secondAttribute="bottom" id="93Y-ud-ZAi"/>
@@ -89,11 +87,9 @@
                             <constraint firstItem="eAh-q1-jxZ" firstAttribute="top" secondItem="VpN-ZH-GDC" secondAttribute="topMargin" constant="-48" id="EW8-Zp-p5s"/>
                             <constraint firstItem="yxY-fq-FiG" firstAttribute="centerX" secondItem="UvU-tb-PN0" secondAttribute="centerX" id="FQq-fF-gaH"/>
                             <constraint firstItem="f92-aZ-Oag" firstAttribute="top" secondItem="UvU-tb-PN0" secondAttribute="bottom" constant="8" id="JbH-eN-c2t"/>
-                            <constraint firstItem="UvU-tb-PN0" firstAttribute="centerX" secondItem="eAh-q1-jxZ" secondAttribute="centerX" id="LN0-pb-p4z"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="top" secondItem="f92-aZ-Oag" secondAttribute="bottom" constant="17" id="PHv-CT-Cu1"/>
                             <constraint firstItem="UvU-tb-PN0" firstAttribute="leading" secondItem="wD2-kl-MP7" secondAttribute="leading" constant="8" id="Sss-LZ-coR"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="leading" secondItem="wD2-kl-MP7" secondAttribute="leading" id="VII-P7-Fsj"/>
-                            <constraint firstItem="eAh-q1-jxZ" firstAttribute="centerX" secondItem="VpN-ZH-GDC" secondAttribute="centerX" id="a1X-Bm-hC9"/>
                             <constraint firstItem="f92-aZ-Oag" firstAttribute="centerX" secondItem="f6t-av-g5z" secondAttribute="centerX" id="cgG-D4-JOE"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="leading" secondItem="wD2-kl-MP7" secondAttribute="leading" id="cxe-DG-cZu"/>
                             <constraint firstItem="f92-aZ-Oag" firstAttribute="centerX" secondItem="UvU-tb-PN0" secondAttribute="centerX" id="dp1-gL-O5A"/>
@@ -102,7 +98,7 @@
                             <constraint firstItem="UvU-tb-PN0" firstAttribute="top" secondItem="yxY-fq-FiG" secondAttribute="bottom" constant="8" id="mXE-Ja-5b1"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="trailing" secondItem="wD2-kl-MP7" secondAttribute="trailing" id="miA-1p-ZUl"/>
                             <constraint firstItem="yxY-fq-FiG" firstAttribute="leading" secondItem="wD2-kl-MP7" secondAttribute="leading" constant="136" id="rIM-H9-DON"/>
-                            <constraint firstItem="eAh-q1-jxZ" firstAttribute="trailing" secondItem="f6t-av-g5z" secondAttribute="trailing" id="rxc-nJ-6A8"/>
+                            <constraint firstItem="eAh-q1-jxZ" firstAttribute="trailing" secondItem="f6t-av-g5z" secondAttribute="trailing" constant="1.5" id="rxc-nJ-6A8"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="top" secondItem="f92-aZ-Oag" secondAttribute="bottom" constant="17" id="w4s-ze-dFO"/>
                         </constraints>
                     </view>
@@ -119,6 +115,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="y8" width="960" height="637.5"/>
         <image name="фон" width="256" height="256"/>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
