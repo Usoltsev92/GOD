@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фон" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-q1-jxZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="y8" translatesAutoresizingMaskIntoConstraints="NO" id="f92-aZ-Oag">
-                                <rect key="frame" x="8" y="178" width="396.5" height="152"/>
+                                <rect key="frame" x="8.5" y="178" width="396.5" height="152"/>
                                 <color key="tintColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="152" id="37W-j8-6JJ"/>
@@ -29,7 +29,7 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сегодня просто пытались выжить." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-tb-PN0">
-                                <rect key="frame" x="8" y="117" width="396.5" height="53"/>
+                                <rect key="frame" x="8" y="117" width="397.5" height="53"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -42,7 +42,7 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <datePicker clipsSubviews="YES" contentMode="scaleAspectFit" semanticContentAttribute="spatial" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="yxY-fq-FiG">
-                                <rect key="frame" x="136" y="48" width="140.5" height="61"/>
+                                <rect key="frame" x="136" y="48" width="141.5" height="61"/>
                                 <color key="tintColor" systemColor="tertiaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="fyK-DU-gt4"/>
@@ -50,13 +50,14 @@
                                 <locale key="locale" localeIdentifier="ru"/>
                                 <connections>
                                     <action selector="datePickerChanged:" destination="c48-3f-tYY" eventType="valueChanged" id="XXz-Qe-0bH"/>
+                                    <action selector="datePickerValueChanged:" destination="c48-3f-tYY" eventType="valueChanged" id="J6T-km-uEw"/>
                                 </connections>
                             </datePicker>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="f6t-av-g5z">
-                                <rect key="frame" x="0.0" y="347" width="412.5" height="515"/>
+                                <rect key="frame" x="0.0" y="347" width="413.5" height="515"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жили не тужили. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-5e-CbR">
-                                        <rect key="frame" x="8" y="8" width="397" height="500"/>
+                                        <rect key="frame" x="8" y="8" width="398" height="500"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="397" id="DUg-Ye-tU5"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="jyR-gT-F1C"/>
