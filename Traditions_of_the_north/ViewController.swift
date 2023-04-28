@@ -19,6 +19,9 @@ class ViewController: UIViewController {
         let calendar = Calendar.current
                 let year = calendar.component(.year, from: Date())
                 setupHolidayGreeting(year: year)
+        
+        greetingLabelOutlet.layer.cornerRadius = 300 // выберите радиус, который вам нужен
+            greetingLabelOutlet.clipsToBounds = true
        }
            
        func isSameDate(_ date1: Date, _ date2: Date) -> Bool {
@@ -192,7 +195,7 @@ class ViewController: UIViewController {
 
 """, image: "y2"),
            
-           Holiday(name: "Йоль", dateComponents: DateComponents(month: 12, day: 31), greetingText: """
+           Holiday(name: "Йоль", dateComponents: DateComponents(month: 4, day: 28), greetingText: """
 
 «Йоль» в переводе со скандинавского означает «вращаться», по другой версии — происходит от «Йоль-мир», одного из имен Одина. В большинстве культур Древнего языческого Мира зимнее солнцестояние люди считают праздником рождения божества (Митры, Эдипа, храброго Геркулеса). В честь праздника Йоль написана даже шекспировская комедия «12-я ночь».
 Йоль: вкусные ритуалы и приметы, которые мы заслужили
@@ -222,7 +225,7 @@ class ViewController: UIViewController {
 
 
 
-""", image: "y2"),
+""", image: "y1"),
            
            
            
