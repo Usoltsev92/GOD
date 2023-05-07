@@ -79,4 +79,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-// 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
+// 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
+// гит ссаная пебень заебала вылетать сука
