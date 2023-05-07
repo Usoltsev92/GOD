@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Календарь-->
         <scene sceneID="OOF-Re-dll">
             <objects>
                 <viewController id="c48-3f-tYY" customClass="ViewController" customModule="Traditions_of_the_north" sceneMemberID="viewController">
@@ -103,7 +103,10 @@
                             <constraint firstItem="f6t-av-g5z" firstAttribute="top" secondItem="f92-aZ-Oag" secondAttribute="bottom" constant="2" id="w4s-ze-dFO"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="8uZ-OO-6Kk"/>
+                    <tabBarItem key="tabBarItem" title="Календарь" id="8uZ-OO-6Kk">
+                        <imageReference key="image" image="calendar.badge.exclamationmark" catalog="system" symbolScale="medium"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="greetingLabelOutlet" destination="UvU-tb-PN0" id="d2Z-xs-Vjg"/>
                         <outlet property="holidayDatePickerOutlet" destination="yxY-fq-FiG" id="mgs-kd-a2l"/>
@@ -516,8 +519,10 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="F2l-T3-OwI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pQ3-rP-vqX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemGroupedBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="c48-3f-tYY" kind="relationship" relationship="viewControllers" id="lEK-z6-OeY"/>
@@ -531,8 +536,12 @@
     </scenes>
     <resources>
         <image name="12" width="600" height="376.5"/>
+        <image name="calendar.badge.exclamationmark" catalog="system" width="128" height="108"/>
         <image name="person.fill.questionmark" catalog="system" width="128" height="102"/>
         <image name="фон2" width="384" height="384"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
