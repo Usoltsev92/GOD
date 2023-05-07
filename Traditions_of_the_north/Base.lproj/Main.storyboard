@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фон2" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-q1-jxZ">
-                                <rect key="frame" x="0.0" y="0.0" width="401" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="y8" translatesAutoresizingMaskIntoConstraints="NO" id="f92-aZ-Oag">
-                                <rect key="frame" x="-7.5" y="0.0" width="414.5" height="297"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="f92-aZ-Oag">
+                                <rect key="frame" x="-8" y="0.0" width="422" height="297"/>
                                 <color key="tintColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="297" id="37W-j8-6JJ"/>
-                                    <constraint firstAttribute="width" constant="414" id="O9t-Tl-gV0"/>
+                                    <constraint firstAttribute="width" constant="422" id="O9t-Tl-gV0"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
@@ -44,10 +44,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="f6t-av-g5z">
                                 <rect key="frame" x="0.0" y="299" width="399.5" height="508"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жили не тужили. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-5e-CbR">
-                                        <rect key="frame" x="8" y="29" width="384.5" height="479"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жили не тужили. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-5e-CbR">
+                                        <rect key="frame" x="8" y="29" width="405" height="479"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="398" id="DUg-Ye-tU5"/>
+                                            <constraint firstAttribute="width" constant="405" id="DUg-Ye-tU5"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="479" id="jyR-gT-F1C"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
@@ -56,8 +56,8 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Jda-5e-CbR" firstAttribute="width" secondItem="Yyy-j2-aV2" secondAttribute="width" multiplier="0.962424" id="67n-th-s6T"/>
-                                    <constraint firstItem="Jda-5e-CbR" firstAttribute="trailing" secondItem="DSg-bd-kZH" secondAttribute="trailing" id="Ltc-vP-ZwS"/>
+                                    <constraint firstItem="Jda-5e-CbR" firstAttribute="width" secondItem="Yyy-j2-aV2" secondAttribute="width" multiplier="0.962424" constant="20.511612000000014" id="67n-th-s6T"/>
+                                    <constraint firstItem="Jda-5e-CbR" firstAttribute="trailing" secondItem="DSg-bd-kZH" secondAttribute="trailing" constant="20.5" id="Ltc-vP-ZwS"/>
                                     <constraint firstItem="Jda-5e-CbR" firstAttribute="bottom" secondItem="DSg-bd-kZH" secondAttribute="bottom" id="kGw-Za-v6c"/>
                                     <constraint firstItem="Jda-5e-CbR" firstAttribute="leading" secondItem="DSg-bd-kZH" secondAttribute="leading" constant="8" id="lWx-P1-UQH"/>
                                     <constraint firstItem="Jda-5e-CbR" firstAttribute="top" secondItem="DSg-bd-kZH" secondAttribute="top" constant="29" id="vWh-RB-ADi"/>
@@ -91,15 +91,15 @@
                             <constraint firstItem="f92-aZ-Oag" firstAttribute="top" secondItem="UvU-tb-PN0" secondAttribute="bottom" constant="-122" id="JbH-eN-c2t"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="top" secondItem="f92-aZ-Oag" secondAttribute="bottom" constant="2" id="PHv-CT-Cu1"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="leading" secondItem="wD2-kl-MP7" secondAttribute="leading" id="VII-P7-Fsj"/>
-                            <constraint firstItem="f92-aZ-Oag" firstAttribute="centerX" secondItem="f6t-av-g5z" secondAttribute="centerX" id="cgG-D4-JOE"/>
+                            <constraint firstItem="f92-aZ-Oag" firstAttribute="centerX" secondItem="f6t-av-g5z" secondAttribute="centerX" constant="3.25" id="cgG-D4-JOE"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="leading" secondItem="wD2-kl-MP7" secondAttribute="leading" id="cxe-DG-cZu"/>
-                            <constraint firstItem="f92-aZ-Oag" firstAttribute="centerX" secondItem="UvU-tb-PN0" secondAttribute="centerX" id="dp1-gL-O5A"/>
+                            <constraint firstItem="f92-aZ-Oag" firstAttribute="centerX" secondItem="UvU-tb-PN0" secondAttribute="centerX" constant="3.25" id="dp1-gL-O5A"/>
                             <constraint firstItem="eAh-q1-jxZ" firstAttribute="leading" secondItem="f6t-av-g5z" secondAttribute="leading" id="fp7-jb-IH9"/>
                             <constraint firstItem="yxY-fq-FiG" firstAttribute="top" secondItem="wD2-kl-MP7" secondAttribute="top" id="ka7-iO-Gjm"/>
                             <constraint firstItem="UvU-tb-PN0" firstAttribute="top" secondItem="yxY-fq-FiG" secondAttribute="bottom" constant="-61" id="mXE-Ja-5b1"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="trailing" secondItem="wD2-kl-MP7" secondAttribute="trailing" id="miA-1p-ZUl"/>
                             <constraint firstItem="yxY-fq-FiG" firstAttribute="leading" secondItem="wD2-kl-MP7" secondAttribute="leading" constant="136" id="rIM-H9-DON"/>
-                            <constraint firstItem="eAh-q1-jxZ" firstAttribute="trailing" secondItem="f6t-av-g5z" secondAttribute="trailing" constant="1.5" id="rxc-nJ-6A8"/>
+                            <constraint firstItem="eAh-q1-jxZ" firstAttribute="trailing" secondItem="f6t-av-g5z" secondAttribute="trailing" constant="14.5" id="rxc-nJ-6A8"/>
                             <constraint firstItem="f6t-av-g5z" firstAttribute="top" secondItem="f92-aZ-Oag" secondAttribute="bottom" constant="2" id="w4s-ze-dFO"/>
                         </constraints>
                     </view>
@@ -176,7 +176,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="y8" width="960" height="637.5"/>
+        <image name="12" width="600" height="376.5"/>
         <image name="фон2" width="384" height="384"/>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
