@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="фон2" translatesAutoresizingMaskIntoConstraints="NO" id="eAh-q1-jxZ">
-                                <rect key="frame" x="0.0" y="0.0" width="399" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="401" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="y8" translatesAutoresizingMaskIntoConstraints="NO" id="f92-aZ-Oag">
-                                <rect key="frame" x="-8.5" y="0.0" width="414.5" height="297"/>
+                                <rect key="frame" x="-7.5" y="0.0" width="414.5" height="297"/>
                                 <color key="tintColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="297" id="37W-j8-6JJ"/>
@@ -30,7 +30,7 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </imageView>
                             <datePicker hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" semanticContentAttribute="spatial" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="yxY-fq-FiG">
-                                <rect key="frame" x="136" y="48" width="125.5" height="61"/>
+                                <rect key="frame" x="136" y="48" width="127.5" height="61"/>
                                 <color key="tintColor" systemColor="tertiaryLabelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="fyK-DU-gt4"/>
@@ -42,10 +42,10 @@
                                 </connections>
                             </datePicker>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="f6t-av-g5z">
-                                <rect key="frame" x="0.0" y="299" width="397.5" height="508"/>
+                                <rect key="frame" x="0.0" y="299" width="399.5" height="508"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Жили не тужили. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jda-5e-CbR">
-                                        <rect key="frame" x="8" y="29" width="382.5" height="479"/>
+                                        <rect key="frame" x="8" y="29" width="384.5" height="479"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="398" id="DUg-Ye-tU5"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="479" id="jyR-gT-F1C"/>
@@ -66,7 +66,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="Yyy-j2-aV2"/>
                             </scrollView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Просто пытались выжить" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-tb-PN0">
-                                <rect key="frame" x="-9.5" y="48" width="416.5" height="74"/>
+                                <rect key="frame" x="-8.5" y="48" width="416.5" height="74"/>
                                 <color key="backgroundColor" red="0.2194608612" green="0.18662120099999999" blue="0.1406708257" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -114,12 +114,48 @@
             </objects>
             <point key="canvasLocation" x="2828.985507246377" y="14.732142857142856"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="70T-2U-hlc">
+            <objects>
+                <tableViewController id="0CB-tM-FcC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="26l-61-Fln">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" systemColor="systemYellowColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vNc-G4-d4F">
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vNc-G4-d4F" id="bDi-Vx-4qS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0CB-tM-FcC" id="Fvc-jU-dkO"/>
+                            <outlet property="delegate" destination="0CB-tM-FcC" id="FVD-jM-kcx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATx-jd-aSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2829" y="695"/>
+        </scene>
     </scenes>
     <resources>
         <image name="y8" width="960" height="637.5"/>
         <image name="фон2" width="384" height="384"/>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
