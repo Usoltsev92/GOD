@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1497BFA22A08BDD600619EF3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497BFA12A08BDD600619EF3 /* TableViewController.swift */; };
 		1498A75B29F3FA2900F50C8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498A75A29F3FA2900F50C8C /* AppDelegate.swift */; };
 		1498A75D29F3FA2900F50C8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498A75C29F3FA2900F50C8C /* SceneDelegate.swift */; };
 		1498A76229F3FA2900F50C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1498A76029F3FA2900F50C8C /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1497BFA12A08BDD600619EF3 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1498A75729F3FA2900F50C8C /* Traditions_of_the_north.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traditions_of_the_north.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1498A75A29F3FA2900F50C8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1498A75C29F3FA2900F50C8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				1498A75C29F3FA2900F50C8C /* SceneDelegate.swift */,
 				1498A77529F7F49600F50C8C /* ViewController.swift */,
 				1498A76029F3FA2900F50C8C /* Main.storyboard */,
+				1497BFA12A08BDD600619EF3 /* TableViewController.swift */,
 				1498A76629F3FA2A00F50C8C /* Assets.xcassets */,
 				1498A76829F3FA2A00F50C8C /* LaunchScreen.storyboard */,
 				1498A76B29F3FA2A00F50C8C /* Info.plist */,
@@ -144,6 +147,7 @@
 				1498A77629F7F49600F50C8C /* ViewController.swift in Sources */,
 				1498A75B29F3FA2900F50C8C /* AppDelegate.swift in Sources */,
 				1498A75D29F3FA2900F50C8C /* SceneDelegate.swift in Sources */,
+				1497BFA22A08BDD600619EF3 /* TableViewController.swift in Sources */,
 				1498A76529F3FA2900F50C8C /* Traditions_of_the_north.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
