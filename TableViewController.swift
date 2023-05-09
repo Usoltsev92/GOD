@@ -9,9 +9,11 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    var god:[String] = ["Tor", "Odin", "Frey", "Freya"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,24 +24,25 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        // Запрос сколько секций должно быть у нас в таблице. пока что работали только с одной секцией.
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        // запрос сколько будет строк в нашей секции. Указываем количество строк будет столько эе сколько и элементов в массиве ГОД
+        return god.count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+
+        // Выше указываем идентефикатор какой ячейки мы будем использовать, снизу прописываем что имя ячейки будет такое как указанно в массиве выше ГОД
+        cell.textLabel?.text = god[indexPath.row]
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
